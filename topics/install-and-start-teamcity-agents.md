@@ -26,6 +26,7 @@ A TeamCity agent connects to the TeamCity server via the URL configured as the `
 Agents use unidirectional agent-to-server connection via the polling protocol: an agent establishes an HTTP(S) connection to the TeamCity Server, and polls the server periodically for server commands.
 
 >It is recommended using __HTTPS__ for agent-to-server communications (check related [server configuration notes](how-to.md#Configure+HTTPS+for+TeamCity+Web+UI)). If the agents and the server are deployed in a secure environment, agents can be configured to use plain HTTP URL for connections to the server as this reduces transfer overhead. Note that the data travelling through the connection established from an agent to the server includes build settings, repository access credentials and keys, repository sources, build artifacts, build progress messages, and build log. In case of using the HTTP protocol that data can be compromised via the "[man in the middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)" attack.
+>
 {type="warning" product="tc"}
 
 [//]: # (Internal note. Do not delete. "Setting up and Running Additional Build Agentsd283e376.txt")
