@@ -133,6 +133,7 @@ This section contains a checklist of recommendations on tweaking the TeamCity se
 
 * Regularly review [Server Health](server-health.md) reports (including hidden ones).
 * Use a separate [reverse proxy server](how-to.md#Set+Up+TeamCity+behind+a+Proxy+Server) (for example, NGINX) to handle HTTPS.
+{product="tc"}
 * Use a separate server for the external database. Monitor the database performance.
 * Monitor the server's CPU and I/O performance. Increase hardware resources as necessary.
 * Make sure [clean-up](teamcity-data-clean-up.md) is configured for all the projects with a due retention policy. Check __Administration | Clean-Up__ to make sure that the clean-up is performed regularly.
@@ -202,6 +203,7 @@ The agents’ hardware requirements are determined by the builds they run. Runni
 Although you can run a build agent on the same machine as the TeamCity server, the recommended approach is to use a separate machine (it can be virtual) for each build agent. If you chose to install several agents on the [same machine](install-multiple-agents-on-one-machine.md), consider the potential CPU, disk, memory, or network bottlenecks that might occur. The [Performance Monitor](performance-monitor.md) build feature can help analyze live data.
 
 If you consider cloud deployment for TeamCity agents (for example, on Amazon EC2), also see [this article](setting-up-teamcity-for-amazon-ec2.md).
+{product="tc"}
 
 ## Estimating Network Traffic Between Server and Agents
 {product="tc"}
