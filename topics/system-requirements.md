@@ -4,6 +4,7 @@
 This article contains general recommendations on choosing and configuring the environment for TeamCity Server and Agents, as well as the network connection between them and a dedicated external database. If you have specific questions that are not covered here, please contact our support via any convenient [feedback channel](feedback.md).
 
 ## TeamCity Server Requirements
+{product="tc"}
 
 ### Choosing Server OS/Platform
 
@@ -203,6 +204,7 @@ Although you can run a build agent on the same machine as the TeamCity server, t
 If you consider cloud deployment for TeamCity agents (for example, on Amazon EC2), also see [this article](setting-up-teamcity-for-amazon-ec2.md).
 
 ## Estimating Network Traffic Between Server and Agents
+{product="tc"}
 
 The network traffic mostly depends on your settings as some of them imply transferring binaries between the agent and the server.
 
@@ -216,6 +218,7 @@ The most important flows of traffic between a TeamCity agent and the TeamCity se
 * Some runners (like coverage or code analysis) include automatic uploading of their results' reports to the server.
 
 ## Estimating External Database Capacity
+{product="tc"}
 
 If a TeamCity server is used extensively, the database performance starts to play a greater role. To ensure production-level performance and reliability, an [external database](set-up-external-database.md) must be used. Its size and performance are crucial aspects to consider.
 

@@ -12,6 +12,7 @@ A TeamCity _build agent_ is a piece of software which listens for the commands f
 {product="tcc"}
 
 If you install TeamCity bundled with a Tomcat servlet container, or use the TeamCity installer for Windows, both the server and one build agent are installed on the same machine. This is not a recommended setup for [production purposes](configure-server-installation.md#Configuring+Server+for+Production+Use) because of [security concerns](security-notes.md). Moreover, the build procedure can slow down the responsiveness of the web UI and overall TeamCity server functioning.
+{product="tc"}
 
 <anchor name="SettingupandRunningAdditionalBuildAgents-ServerDataTransfers"/>
 <anchor name="SettingupandRunningAdditionalBuildAgents-Agent-ServerDataTransfers"/>

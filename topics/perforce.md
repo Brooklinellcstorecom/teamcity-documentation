@@ -6,7 +6,9 @@ This page contains descriptions of the fields and options available when setting
 ## Prerequisites
 {product="tc"}
 
-A Perforce client must be installed on the TeamCity server, and it should be present in `PATH`. Alternatively, a full path to `p4` could be set via the [internal property](server-startup-properties.md#TeamCity+Internal+Properties) `teamcity.perforce.customP4Path`. The property value must include the `p4` filename, too.
+<note>
+
+A Perforce client must be installed on the TeamCity server, and it should be present in `PATH`. Alternatively, a full path to `p4` could be set via the [internal property](server-startup-properties.md#TeamCity+Internal+Properties) `teamcity.perforce.customP4Path`. The property value must include the `p4` filename, too.  
 If you plan to use the agent-side [checkout mode](vcs-checkout-mode.md#agent-checkout), note that a Perforce client must be installed on the agents, and the path to the p4 executable must be added to the PATH environment variable.  
 Also check the [Perforce compatibility matrix](perforce-helix-core-compatibility.md).
 </note>

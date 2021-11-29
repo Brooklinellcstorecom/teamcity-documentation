@@ -2,6 +2,7 @@
 [//]: # (auxiliary-id: viewpage.actionpageId113084582;How To...)
 
 ## Install Non-Bundled Version of Java
+{product="tc"}
 
 TeamCity Server requires a Java SE JRE installation to run. A compatible JRE version is bundled in the TeamCity `.exe` installer but needs to be installed separately when using other distributions.
 
@@ -19,6 +20,7 @@ If you also run a TeamCity agent from the `<[TeamCity Home](teamcity-home-direct
 >If you use a different Java version, specified via an environment variable (`TEAMCITY_JRE`, `JRE_HOME`, or `JAVA_HOME`), make sure it is available for the process launching the TeamCity server (it is recommended to set a global OS environment variable). The variable should point to the home directory of the installed JRE or JVM (Java SDK) respectively.
 
 ## Update from 32-bit to 64-bit Java
+{product="tc"}
 
 TeamCity server is bundled with the 64-bit JVM but can run under both 32- and 64-bit versions.
 
@@ -95,6 +97,7 @@ Starting up the TeamCity server on macOS is quite similar to starting Tomcat on 
 The TeamCity server will now start automatically when the machine starts. To configure automatic start of a TeamCity build agent, see the [dedicated section](start-teamcity-agent.md#Automatic+Start).
 
 ## Automate TeamCity Server Installation
+{product="tc"}
 
 For an automated TeamCity server installation, use the `.tar.gz` distribution.
 

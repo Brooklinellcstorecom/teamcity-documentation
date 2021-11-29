@@ -25,7 +25,7 @@ Ensure that the user account used for running the agent service has proper [perm
     * __Full ZIP file distribution*__: a full build agent prepacked with all plugins currently enabled on the server.
 4. Extract the downloaded file into an arbitrary directory.
 5. Open the `<installation path>\conf` directory and rename the `buildAgent.dist.properties` file to `buildAgent.properties`.
-6. Edit the `buildAgent.properties` file to specify the TeamCity server URL (HTTPS is recommended, see [these notes](install-and-start-teamcity-agents.md#Agent-Server+Data+Transfer)), the name of the agent, and the [authentication token](install-and-start-teamcity-agents.m#Generating+Authentication+Token). Refer to [this article](configure-agent-installation.md) for details on the agent configuration.
+6. Edit the `buildAgent.properties` file to specify the TeamCity server URL (HTTPS is recommended, see [these notes](install-and-start-teamcity-agents.md#Agent-Server+Data+Transfer)), the name of the agent, and the [authentication token](install-and-start-teamcity-agents.md#Generating+Authentication+Token). Refer to [this article](configure-agent-installation.md) for details on the agent configuration.
    {product="tcc"}
 6. Edit the `buildAgent.properties` file to specify the TeamCity server URL (HTTPS is recommended, see [these notes](install-and-start-teamcity-agents.md#Agent-Server+Data+Transfer)) and the name of the agent. Refer to [this article](configure-agent-installation.md) for details on the agent configuration.
    {product="tc"}
@@ -129,3 +129,4 @@ You can test the connection by the following commands:
 3. You may need to download `Sysinternals psexec.exe`, in which case you will see the corresponding warning and a link to __Administration | Tools__ where you can download it.
 
 >You can use Agent Push presets in [Agent Cloud profile](agent-cloud-profile.md) settings to automatically install a build agent to a started cloud instance.
+{product="tc"}

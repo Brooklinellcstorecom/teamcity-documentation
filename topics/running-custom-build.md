@@ -120,7 +120,7 @@ More details are available in the [related blog-post](http://blog.jetbrains.com/
 
  <seealso>
         <category ref="installation">
-            <a href="upgrading-teamcity-server-and-agents.md">Upgrade</a>
+            <a href="upgrading-teamcity-server-and-agents.md" product="tc">Upgrade</a>
         </category>
         <category ref="concepts">
             <a href="build-queue.md">Build Queue</a>

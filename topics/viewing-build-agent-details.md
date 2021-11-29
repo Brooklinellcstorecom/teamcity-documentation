@@ -70,7 +70,7 @@ The tab lists system properties, environment variables, and configuration parame
 
 <seealso>
         <category ref="installation">
-            <a href="install-and-start-teamcity-server.md">Installing and Running Additional Build Agents</a>
+            <a href="install-and-start-teamcity-server.md" product="tc">Installing and Running Additional Build Agents</a>
         </category>
         <category ref="concepts">
             <a href="build-agent.md">Build Agent</a>
