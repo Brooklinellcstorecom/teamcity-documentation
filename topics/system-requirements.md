@@ -160,6 +160,7 @@ TeamCity Agent can run on any recent version of Windows, Linux, or macOS. Requir
 The agent Java process has to:
 * be able to open outbound HTTP connections to the server URL that is configured via the `serverUrl` property in the `[buildAgent.properties](configure-agent-installation.md)` file (typically the same address you use in the browser to view the TeamCity UI).  
 Sending requests to the paths under the configured URL should not be limited. See also the recommended [reverse proxy settings](how-to.md#Set+Up+TeamCity+behind+a+Proxy+Server). Ensure that any firewalls installed on the agent or server machines, network configuration, and proxies (if any) comply with these requirements.
+{product="tc"}
 * have full permissions (read/write/delete) to the following directories recursively: `<Agent Home Directory>` (necessary for automatic agent upgrade and agent tools support), `<Agent Work Directory>`, `<Agent Temp Directory>`, and agent system directory (set by `workDir`, `tempDir`, and `systemDir` parameters in the `buildAgent.properties` file).
 * be able to launch processes (to run builds).
 * be able to launch nested processes with the following parent process exit (used during the agent upgrade).
