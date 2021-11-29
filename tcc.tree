@@ -124,7 +124,7 @@
                 <toc-element id="enabling-email-verification.md"/>
                 <toc-element id="managing-two-factor-authentication.md"/>
             </toc-element>
-            <toc-element id="teamcity-data-clean-up.md" show-structure-for="chapter" show-structure-depth="4" accepts-web-file-names="cleanup"/>
+            <toc-element id="teamcity-data-clean-up.md" show-structure-for="chapter" show-structure-depth="4" accepts-web-file-names-ref="cleanup"/>
             <toc-element id="teamcity-data-backup.md"/>
             <toc-element id="build-agents-configuration-and-maintenance.md" show-structure-for="chapter" show-structure-depth="4">
                 <toc-element id="viewing-build-agent-logs.md" show-structure-for="chapter" show-structure-depth="4"/>
@@ -346,6 +346,7 @@
         <toc-element id="build-state.md" show-structure-for="chapter" show-structure-depth="4"/>
         <toc-element id="identifier.md" show-structure-for="chapter" show-structure-depth="4"/>
         <toc-element id="requirement-conditions.md" show-structure-for="chapter" show-structure-depth="4"/>
+        <toc-element id="teamcity-specific-directories.md"/>
         <toc-element id="wildcards.md"/>
     </toc-element>
     <toc-element id="troubleshooting.md">
@@ -367,7 +368,9 @@
         <toc-element id="continuous-delivery-to-windows-azure-web-sites-or-iis.md" show-structure-for="chapter" show-structure-depth="4"/>
     </toc-element>
     <toc-element id="what-s-new-in-teamcity.md" show-structure-for="chapter" show-structure-depth="4" accepts-web-file-names="what-s-new-in-teamcity-2021-2.html">
-        <toc-element id="teamcity-2021-2-release-notes.md" show-structure-for="chapter" show-structure-depth="4"/>
+        <toc-element id="teamcity-2021-2-release-notes.md" show-structure-for="chapter" show-structure-depth="4">
+            <toc-element id="teamcity-2021-2-1-release-notes.md" show-structure-for="chapter" show-structure-depth="4"/>
+        </toc-element>
     </toc-element>
     <toc-element toc-title="Other resources">
         <toc-element toc-title="TeamCity On-Premises Help" href="https://www.jetbrains.com/help/teamcity/teamcity-documentation.html"/>
