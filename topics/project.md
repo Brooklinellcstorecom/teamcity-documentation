@@ -3,7 +3,7 @@
 
 A _project_ in TeamCity is a collection of [build configurations](build-configuration.md). A TeamCity project can correspond to a software project, a specific version/release of a project or any other logical group of the build configurations.   
 The project has a name, an [ID](identifier.md), and an optional description.   
-In TeamCity, user [roles and permissions](role-and-permission.md) are managed on a per-project basis.
+In TeamCity, user [roles and permissions](managing-user-roles-and-permissions.md) are managed on a per-project basis.
 
 ## Project Hierarchy
 
@@ -36,7 +36,7 @@ Entities defined in a project become available to all the build configurations r
 For example, if you want to share a VCS root among several projects, you have to move it to the common parent of all these projects. If a VCS root must be shared among all projects, it must be created in the __&lt;Root project&gt;__.
 
 A setting referencing a project affects the project and all its subprojects. These include:
-* [User and User group roles](role-and-permission.md)
+* [User and User group roles](managing-user-roles-and-permissions.md)
 * [Investigations](investigating-and-muting-build-failures.md)
 * [Muted Problems](investigating-and-muting-build-failures.md#Muting+Tests)
 * [Notification rules](subscribing-to-notifications.md)

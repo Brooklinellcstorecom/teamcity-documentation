@@ -103,7 +103,7 @@ For each failed test, you can instantly see:
 * current stack trace and the information about the build where the test is currently failing
 * information about the first failure of the test, with the stack trace and the build
 
-The investigations assigned to you are also highlighted in the web UI if you enable the "_Highlight my changes and investigations_" option in your [profile settings](managing-your-user-account.md).
+The investigations assigned to you are also highlighted in the web UI if you enable the "_Highlight my changes and investigations_" option in your [profile settings](configuring-your-user-profile.md).
 
 ## Viewing Investigation History
 

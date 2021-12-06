@@ -53,7 +53,7 @@ A notification rule comprises the following conditions:
 
 The notification about a certain event is only sent if this event satisfies any of the configured rules.
 
-Admins can configure these rules per [user group](user-group.md), and its users will inherit these rules automatically.
+Admins can configure these rules per [user group](creating-and-managing-user-groups.md), and its users will inherit these rules automatically.
 
 ## Customize Notifications
 {product="tc"}

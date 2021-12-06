@@ -76,7 +76,7 @@ Use the following options for granular control over the notifications in the sel
 
 <note>
 
-Make sure your [Version Control Username](managing-users-and-user-groups.md#VCS+Usernames) Settings are correct.
+Make sure your [Version Control username](creating-and-managing-users.md#VCS+Usernames) settings are correct.
 
 </note>
 
