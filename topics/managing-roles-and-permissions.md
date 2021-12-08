@@ -1,5 +1,5 @@
-[//]: # (title: Managing User Roles and Permissions)
-[//]: # (auxiliary-id: Managing User Roles and Permissions;Managing Roles;Role and Permission)
+[//]: # (title: Managing Roles and Permissions)
+[//]: # (auxiliary-id: Managing Roles and Permissions;Managing Roles;Role and Permission)
 
 User access levels in TeamCity are handled by assigning different _roles_ to users thus granting them respective _permissions_.
 

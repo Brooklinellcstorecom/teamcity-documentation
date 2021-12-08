@@ -75,7 +75,7 @@ When you [upload private SSH keys](ssh-keys-management.md) to your TeamCity serv
 
 __Use predefined roles__.
 
-Out of the box, TeamCity offers several predefined [roles](managing-user-roles-and-permissions.md):
+Out of the box, TeamCity offers several predefined [roles](managing-roles-and-permissions.md):
 * System Administrator
 * Project Administrator
 * Project Developer
@@ -83,11 +83,11 @@ Out of the box, TeamCity offers several predefined [roles](managing-user-roles-a
 
 You can create [user groups](creating-and-managing-user-groups.md) that match your organizational structure and assign the above roles to those groups. Then add your users to the respective groups, granting them the lowest level of privileges they need for their day-to-day work.
 
-It is also strongly recommended that you create new roles with additional permissions, instead of immediately assigning the Project Administrator role to anyone who needs slightly more privileges. (This does not work if you disable [per-project permissions](managing-user-roles-and-permissions.md#Per-Project+Authorization+Mode).)
+It is also strongly recommended that you create new roles with additional permissions, instead of immediately assigning the Project Administrator role to anyone who needs slightly more privileges. (This does not work if you disable [per-project permissions](managing-roles-and-permissions.md#Per-Project+Authorization+Mode).)
 
 __Use per-project authorization__.
 
-To tighten security even more, you can also make use of [per-project authorization](managing-user-roles-and-permissions.md#Per-Project+Authorization+Mode). This way, your developers could, for example, have access only to the compilation part of your build chain, while devops could access and run the deployment part.
+To tighten security even more, you can also make use of [per-project authorization](managing-roles-and-permissions.md#Per-Project+Authorization+Mode). This way, your developers could, for example, have access only to the compilation part of your build chain, while devops could access and run the deployment part.
 
 <anchor name="caution-guest-login"/>
 
@@ -101,7 +101,7 @@ If you access the [TeamCity REST API](https://www.jetbrains.com/help/teamcity/re
 
 __Restrict deployment build permissions__.
 
-Make sure that your deployment build chains do not allow [personal builds](personal-build.md). [Limit the number of developers](managing-user-roles-and-permissions.md) who can trigger those builds, and use a separate pool of clean agents for those builds.
+Make sure that your deployment build chains do not allow [personal builds](personal-build.md). [Limit the number of developers](managing-roles-and-permissions.md) who can trigger those builds, and use a separate pool of clean agents for those builds.
 
 __Thoroughly manage permissions granted to users and user groups__.
 
@@ -156,7 +156,7 @@ Limit access to the machine your TeamCity server runs on. Enable access logs and
 
 In general, don't use the TeamCity server machine for running [build agents](build-agent.md) (at least under the user permitted to read the `<[TeamCity Home Directory](teamcity-home-directory.md)>` and `<[TeamCity Data Directory](teamcity-data-directory.md)>`).
 
-The TeamCity server (and agents) processes run under users with minimal required [permissions](managing-user-roles-and-permissions.md). Installation directories are readable and writable only by a limited set of OS users. The `conf\buildAgent.properties` file and server logs as well as the [Data Directory](teamcity-data-directory.md) are only readable by OS users who represent administrators of the services, because reading those locations may allow taking over the agent or server respectively.
+The TeamCity server (and agents) processes run under users with minimal required [permissions](managing-roles-and-permissions.md). Installation directories are readable and writable only by a limited set of OS users. The `conf\buildAgent.properties` file and server logs as well as the [Data Directory](teamcity-data-directory.md) are only readable by OS users who represent administrators of the services, because reading those locations may allow taking over the agent or server respectively.
 
 Note that binaries of the agent plugins installed on the server are available to anyone who can access the server URL.
 
@@ -243,7 +243,7 @@ Do not store credentials or other sensitive information as plain text in your bu
 
 __Keep your build history__.
 
-Keep your build history and logs for a longer period of time, especially for builds doing critical deployments, by specifying corresponding [clean-up rules](teamcity-data-clean-up.md) for your project. Also, make sure to not grant the "remove build" [permissions](managing-user-roles-and-permissions.md) to developers, as this could prevent the archiving.
+Keep your build history and logs for a longer period of time, especially for builds doing critical deployments, by specifying corresponding [clean-up rules](teamcity-data-clean-up.md) for your project. Also, make sure to not grant the "remove build" [permissions](managing-roles-and-permissions.md) to developers, as this could prevent the archiving.
 
 Both measures may help with tracing malicious activities, even if they happened a long time ago.
 

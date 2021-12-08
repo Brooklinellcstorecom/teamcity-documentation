@@ -51,7 +51,7 @@ These settings are not used for authentication for the particular VCS, and so on
 These settings enable you to:
 * track your changes status on the [Changes](viewing-your-changes.md),
 * highlight such builds on the Projects page if the appropriate [option is selected](#Customizing+UI),
-* notify you on such builds when the __Builds affected by my changes__ option is selected in [notifications settings](subscribing-to-notifications.md#What+Will+Be+Watched).
+* notify you on such builds when the __Builds affected by my changes__ option is selected in [notifications settings](adding-notification-rules.md#What+Will+Be+Watched).
 
 ## Configuring Two-Factor Authentication
 
@@ -86,14 +86,14 @@ In __Your Profile | Notification Rules__, you can view what notification rules y
 
 ## Uploading Avatar
 
-Since version 2021.2, users can upload their avatars in the user profile. The avatars are displayed around the TeamCity UI, next to the changes (commits) of their authors. Only users with the _View all users_ [permission](managing-user-roles-and-permissions.md) can see them.
+Since version 2021.2, users can upload their avatars in the user profile. The avatars are displayed around the TeamCity UI, next to the changes (commits) of their authors. Only users with the _View all users_ [permission](managing-roles-and-permissions.md) can see them.
 
 <seealso>
         <category ref="concepts">
-            <a href="managing-user-roles-and-permissions.md">Roles and Permissions</a>
+            <a href="managing-roles-and-permissions.md">Roles and Permissions</a>
         </category>
         <category ref="user-guide">
             <a href="viewing-your-changes.md">Viewing Your Changes</a>
-            <a href="subscribing-to-notifications.md">Subscribing to Notifications</a>
+            <a href="adding-notification-rules.md">Subscribing to Notifications</a>
         </category>
 </seealso>

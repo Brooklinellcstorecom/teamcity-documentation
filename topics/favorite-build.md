@@ -21,7 +21,7 @@ You can also configure notifications on your favorite builds using the appropria
 
 ## Configuring Notifications on Your Favorite Builds
 
-When [subscribing to notifications](subscribing-to-notifications.md), you can limit notifications on the selected watched projects or build configurations to your favorite builds only.
+When [subscribing to notifications](adding-notification-rules.md), you can limit notifications on the selected watched projects or build configurations to your favorite builds only.
 
 ## Removing Builds from Favorites
 

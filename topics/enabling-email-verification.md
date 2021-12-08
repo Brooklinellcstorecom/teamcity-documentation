@@ -18,7 +18,7 @@ To enable email verification in TeamCity:
 
 <seealso>
         <category ref="concepts">
-            <a href="managing-user-roles-and-permissions.md">Roles and Permissions</a>
+            <a href="managing-roles-and-permissions.md">Roles and Permissions</a>
         </category>
         <category ref="admin-guide">
             <a href="configuring-authentication-settings.md">Configuring Authentication Settings</a>

@@ -1227,7 +1227,7 @@ The default setting for the VCS checkout mode on creating new build configuratio
 
 ### Project-based Agent Management Permissions
 
-New TeamCity installations now have different agent management permissions assignments: Project Administrator role does not include (global) Agent Manager role. Instead, Project administrator role has [agent-project permissions](managing-user-roles-and-permissions.md#Project-level+Agent+Management+Permissions) which allow managing agents from the agent pools with only projects where user has Project Administrator role.
+New TeamCity installations now have different agent management permissions assignments: Project Administrator role does not include (global) Agent Manager role. Instead, Project administrator role has [agent-project permissions](managing-roles-and-permissions.md#Project-level+Agent+Management+Permissions) which allow managing agents from the agent pools with only projects where user has Project Administrator role.
 
 Existing installations are not affected by this change in order not to change the user permissions. However, it is recommended to review the Project Administrator role and consider excluding "Agent Manager" role and adding the following permissions:
 * Enable / disable agents associated with project
@@ -2295,7 +2295,7 @@ NCover 3 support may not work. See [TW-11680](http://youtrack.jetbrains.net/issu
 </tip>
 
 __Notification templates change__   
-Since 5.1, TeamCity uses [new template engine](customizing-notifications.md) (Freemarker) to generate notification messages. New default templates are supplied and customizations to the templates made prior to upgrading are no longer effective.
+Since 5.1, TeamCity uses [new template engine](customizing-notification-templates.md) (Freemarker) to generate notification messages. New default templates are supplied and customizations to the templates made prior to upgrading are no longer effective.
 
 If you customized notification templates prior to this upgrade, please review the new notification templates and make changes to them if necessary. Old notification templates are copied into `<TeamCity Data Directory>/config/_trash/_notifications` directory. Hope, you will enjoy the new templates and new extended customization capabilities.
 
@@ -2487,7 +2487,7 @@ Since TeamCity 3.0 introduces ability to configure VCS roots on per\-Build Confi
 
 __User Roles when upgrading from TeamCity 1.x/2.x/3.x Professional to 3.x Enterprise__
 
-When upgrading from TeamCity 1.x/2.x/3.x Professional to 3.x Enterprise for the first time TeamCity's accounts will be assigned the following [roles](managing-user-roles-and-permissions.md) by default:
+When upgrading from TeamCity 1.x/2.x/3.x Professional to 3.x Enterprise for the first time TeamCity's accounts will be assigned the following [roles](managing-roles-and-permissions.md) by default:
 * _Administrators_ become System Administrators
 * _Users_ become Project Developers for all of the projects
 * The _Guest_ account is able to view all of the projects

@@ -9,7 +9,7 @@ The authentication token is automatically generated on every server start. The t
 
 To log in as a Super User, use an empty username and the authentication token as the password on the login page.
 
-A Super User is not a usual TeamCity user and does not have any personal settings, such as __Changes__ page and Profile section (that is there is no way to receive notifications). The Super User has all [System Administrator permissions](managing-user-roles-and-permissions.md).
+A Super User is not a usual TeamCity user and does not have any personal settings, such as __Changes__ page and Profile section (that is there is no way to receive notifications). The Super User has all [System Administrator permissions](managing-roles-and-permissions.md).
 
 Any number of Super Users can log in to TeamCity simultaneously without affecting each other's sessions.
 

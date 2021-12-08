@@ -9,7 +9,7 @@ Read more about running commits via Remote Run in [Pre-Tested (Delayed) Commit](
 By default, users only see their own personal builds in the build lists, but this can be changed via the "_Show all personal builds_" option in __Your Profile | General | UI settings__ of the [user profile](configuring-your-user-profile.md).
 
 You can also mark a build as _personal_ using the corresponding option of the [Run](running-custom-build.md) dialog.   
-By default, only users with the Project Developer [role](managing-user-roles-and-permissions.md) can initiate a personal build.
+By default, only users with the Project Developer [role](managing-roles-and-permissions.md) can initiate a personal build.
 
 It is possible to [restrict running personal builds](configuring-general-settings.md#Allow+Triggering+Personal+Builds) in the __General Settings__ of a build configuration.
 

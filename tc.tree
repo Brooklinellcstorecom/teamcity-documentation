@@ -188,15 +188,15 @@
             <toc-element id="viewing-users-and-user-groups.md"/>
             <toc-element id="creating-and-managing-users.md" show-structure-for="chapter" show-structure-depth="4" accepts-web-file-names-ref="creating-and-managing-users"/>
             <toc-element id="creating-and-managing-user-groups.md" show-structure-for="chapter" show-structure-depth="4" accepts-web-file-names-ref="creating-and-managing-user-groups"/>
-           \<toc-element id="managing-user-roles-and-permissions.md" show-structure-for="chapter" show-structure-depth="4" accepts-web-file-names-ref="managing-user-roles-and-permissions"/>
+            <toc-element id="managing-roles-and-permissions.md" show-structure-for="chapter" show-structure-depth="4" accepts-web-file-names-ref="managing-user-roles-and-permissions"/>
             <toc-element id="tracking-user-actions.md"/>
             <toc-element id="super-user.md"/>
             <toc-element id="guest-user.md"/>
-            <toc-element id="configuring-user-notifications.md" show-structure-for="chapter" show-structure-depth="4">
-               <toc-element id="subscribing-to-notifications.md" show-structure-for="chapter" show-structure-depth="4"/>
-               <toc-element id="customizing-notifications.md" show-structure-for="chapter" show-structure-depth="4"/>
-               <toc-element id="setting-up-google-mail-as-notification-server.md" show-structure-for="chapter" show-structure-depth="4"/>
-            </toc-element>
+         </toc-element>
+         <toc-element id="configuring-notifications.md" show-structure-for="chapter" show-structure-depth="4">
+            <toc-element id="adding-notification-rules.md" show-structure-for="chapter" show-structure-depth="4" accepts-web-file-names-ref="adding-notification-rules"/>
+            <toc-element id="customizing-notification-templates.md" show-structure-for="chapter" show-structure-depth="4" accepts-web-file-names-ref="customizing-notification-templates"/>
+            <toc-element id="setting-up-google-mail-as-notification-server.md" show-structure-for="chapter" show-structure-depth="4"/>
          </toc-element>
          <toc-element id="managing-projects-and-build-configurations.md">
             <toc-element id="creating-and-editing-projects.md" show-structure-for="chapter" show-structure-depth="4"/>

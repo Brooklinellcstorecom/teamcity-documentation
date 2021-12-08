@@ -5,8 +5,8 @@
 {id="User+Group" auxiliary-id="User Group"}
 
 User groups help manage user accounts more efficiently:
-* Assign [roles](managing-user-roles-and-permissions.md) to all users included in the group at once: users get all the roles of the groups they belong to.
-* Set [notification rules](subscribing-to-notifications.md) for all users in the group: all the notification rules defined for the group are treated as default notification rules for the users included in this group.
+* Assign [roles](managing-roles-and-permissions.md) to all users included in the group at once: users get all the roles of the groups they belong to.
+* Set [notification rules](adding-notification-rules.md) for all users in the group: all the notification rules defined for the group are treated as default notification rules for the users included in this group.
 
 You can create as many user groups as you need, and each user group can include any number of user accounts and even other user groups. A user account (or a whole user group) can be included into several user groups as well.
 
@@ -40,4 +40,4 @@ The __Roles__ tab allows you to view and edit (assign/unassign) default roles fo
 
 To assign a role for the current group explicitly, click the __Assign role__ link. To view permissions granted to a role, click the __View roles permissions__ link. You can also specify notification rules to be applied to all users in the current group.
 
-To learn more about notification rules, refer to [Subscribing to Notifications](subscribing-to-notifications.md).
+To learn more about notification rules, refer to [Subscribing to Notifications](adding-notification-rules.md).

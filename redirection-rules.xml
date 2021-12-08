@@ -44,5 +44,11 @@
             <accepts>role-and-permission.html</accepts>
             <accepts>role-and-permission.html</accepts>
     </rule>
+    <rule id="adding-notification-rules">
+            <accepts>subscribing-to-notifications.html</accepts>
+    </rule>
+    <rule id="customizing-notification-templates">
+            <accepts>customizing-notifications.html</accepts>
+    </rule>
 
 </rules>
