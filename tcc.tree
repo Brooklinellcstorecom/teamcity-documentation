@@ -68,7 +68,6 @@
         <toc-element id="difference-viewer.md"/>
         <toc-element id="favorite-build.md" show-structure-for="chapter" show-structure-depth="4"/>
         <toc-element id="first-failure.md"/>
-        <toc-element id="guest-user.md"/>
         <toc-element id="history-build.md"/>
         <toc-element id="notifier.md"/>
         <toc-element id="personal-build.md"/>
@@ -325,7 +324,6 @@
         <toc-element id="patterns-for-accessing-build-artifacts.md" show-structure-for="chapter" show-structure-depth="4"/>
         <toc-element id="mono-support.md" show-structure-for="chapter" show-structure-depth="4"/>
         <toc-element id="maven-server-side-settings.md" show-structure-for="chapter" show-structure-depth="4"/>
-        <toc-element id="tracking-user-actions.md"/>
     </toc-element>
     <toc-element id="extending-teamcity.md">
         <toc-element id="build-script-interaction-with-teamcity.md" show-structure-for="chapter" show-structure-depth="4">

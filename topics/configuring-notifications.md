@@ -101,5 +101,6 @@ Users can manage their own notification rules in their profile settings. Project
 Read more about the composition and processing of notification rules in [this article](adding-notification-rules.md).
 
 ## Changing Notification Templates
+{product="tc"}
 
 Project Administrators can change the default notifications' format by customizing their text templates. See the detailed instruction in [this article](customizing-notification-templates.md).
