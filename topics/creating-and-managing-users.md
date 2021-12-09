@@ -1,5 +1,5 @@
 [//]: # (title: Creating and Managing Users)
-[//]: # (auxiliary-id: Creating and Managing Users;User Account;Managing Users and User Groups)
+[//]: # (auxiliary-id: Creating and Managing Users;Managing Users and User Groups)
 
 ## What is User Account in TeamCity
 {id="User+Account" auxiliary-id="User Account"}
@@ -53,7 +53,7 @@ The names set here will be used to:
 
 ## Add User to Group
 
-Use the __Groups__ tab to view the [groups](#Managing+User+Groups) the user belongs to and add/remove the user from groups.
+Use the __Groups__ tab to view the [groups](creating-and-managing-user-groups.md) the user belongs to and add/remove the user from groups.
 
 ## Add User to Project
 

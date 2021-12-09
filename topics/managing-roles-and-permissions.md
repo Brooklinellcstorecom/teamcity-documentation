@@ -1,5 +1,5 @@
 [//]: # (title: Managing Roles and Permissions)
-[//]: # (auxiliary-id: Managing Roles and Permissions;Managing Roles;Role and Permission)
+[//]: # (auxiliary-id: Managing Roles and Permissions;Role and Permission)
 
 User access levels in TeamCity are handled by assigning different _roles_ to users thus granting them respective _permissions_.
 
@@ -87,7 +87,7 @@ Corresponds to the default [Project Viewer](#project-viewer) role granted for al
 
 ## Per-Project Authorization Mode
 
-Roles are assigned to users by administrators on a per-project basis: a user can have different roles in different projects, and hence, the permissions are project-based. A user can have a role in a specific project or in all available projects, or no roles at all. You can [associate a user account with a set of roles](creating-and-managing-users.md#Assiging+Roles+to+Users). A role can also be granted to a user group. This means that the role is automatically granted to all the users that are included into the group (both directly or through other groups).
+Roles are assigned to users by administrators on a per-project basis: a user can have different roles in different projects, and hence, the permissions are project-based. A user can have a role in a specific project or in all available projects, or no roles at all. You can [associate a user account with a set of roles](creating-and-managing-users.md#Assigning+Roles+to+Users). A role can also be granted to a user group. This means that the role is automatically granted to all the users that are included into the group (both directly or through other groups).
 
 You can add roles and assign permissions to them in __Administration | Roles__. Click __Add permission__ under any role to see the list of all available permissions, select a required permission, and click __Add__. To add multiple permissions, hold the __CTRL__ key when selecting them.
 

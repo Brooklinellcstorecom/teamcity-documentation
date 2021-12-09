@@ -1,5 +1,5 @@
 [//]: # (title: Creating and Managing User Groups)
-[//]: # (auxiliary-id: Creating and Managing User Groups;User Group)
+[//]: # (auxiliary-id: Creating and Managing User Groups)
 
 ## What is User Group in TeamCity
 {id="User+Group" auxiliary-id="User Group"}
@@ -14,11 +14,11 @@ You can create as many user groups as you need, and each user group can include 
 
 ## "All Users" Group
 
-__All Users__ is a special user group that is always present in the system. The group contains all registered users and no user can be removed from the group. You can modify roles and notification rules of the "All Users" group to make them default for all the users in the system.
+__All Users__ is a special user group that is always present in the system. The group contains all registered users and no user can be removed from the group. You can modify roles and notification rules of the _All Users_ group to make them default for all the users in the system.
 
 All the newly registered users get roles and notification rules inherited from the group.
 
-The [Guest User](guest-user.md) does not belong to the All Users group, so roles and notification rules can be managed for the user separately.
+The [Guest User](guest-user.md) does not belong to the _All Users_ group, so roles and notification rules can be managed for the user separately.
 
 ## Creating New User Group
 
