@@ -56,9 +56,9 @@ Currently, these notifications are available only for email and Slack.
 
 </table>
 
-### Configuring User-level Notifications
+## Configuring User-level Notifications
 
-#### Email Notifications
+### Email Notifications
 
 TeamCity Email Notifier relies on the email address specified in your user profile.
 
@@ -80,7 +80,7 @@ TeamCity Slack Notifier requires signing in to Slack and relies on the Slack con
 
 TeamCity IDE Notifier requires installing the TeamCity plugin in your IDE. For the details on installing TeamCity IDE plugins, refer to [Installing Tools](installing-tools.md).
 
-### Configuring Build-level Notifications
+## Configuring Build-level Notifications
 
 To set up notifications on a build configuration level, you need to add the [Notifications](notifications.md) build feature to this build configuration. This feature has two types available:
 

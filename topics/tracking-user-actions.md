@@ -3,7 +3,7 @@
 
 TeamCity logs user actions into the Audit log, which is available on the __Administration | Audit__ page.
 
-## See User Audit Log
+## View User Audit Log
 
 Here you can see who deleted a build configuration or project, assigned a role to a user, added a user to a group, modified a build configuration, and much more. To find the required information faster, filter the log by the activity type, projects/build configurations, and/or particular users.
 

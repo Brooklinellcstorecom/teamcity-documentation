@@ -7,7 +7,7 @@ Each notification rule consists of two parts: [what scope will be watched](#What
 
 ## Add Notification Rule
 
-To add a new notification rule:
+To add a new personal notification rule:
 1. In the upper right corner of the screen, click your avatar and click __Profile__ in the drop-down menu.
 2. In __Your Profile__, open the __Notification Rules__ tab.
 3. Click the required notifications type and configure the required settings.
