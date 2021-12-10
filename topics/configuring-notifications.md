@@ -82,7 +82,7 @@ TeamCity IDE Notifier requires installing the TeamCity plugin in your IDE. For t
 
 ## Configuring Build-level Notifications
 
-To set up notifications on a build configuration level, you need to add the [Notifications](notifications.md) build feature to this build configuration. This feature has two types available:
+To set up notifications on a build configuration level, you need to add the [Notifications](notifications.md) build feature to this build configuration. This feature has two types:
 
 * [Email Notifier](notifications.md#Email+Notifier) sends emails per events in this build configuration. Similarly to the [user-level email notifications](#Email+Notifications), it uses the SMTP server settings configured in __Administration | Email Notifier__.
 {product="tc"}
