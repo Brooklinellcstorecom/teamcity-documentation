@@ -30,6 +30,9 @@
     <rule id="upgrade">
         <accepts>upgrade.html</accepts>
     </rule>
+    <rule id="set-up-external-database">
+        <accepts>setting-up-external-database.html</accepts>
+    </rule>
     <rule id="managing-users-and-roles">
             <accepts>managing-user-accounts-groups-and-permissions.html</accepts>
     </rule>
