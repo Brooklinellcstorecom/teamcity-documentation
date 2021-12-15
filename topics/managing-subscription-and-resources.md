@@ -24,6 +24,8 @@ You can prepay a JetBrains-hosted agent anytime. To do this:
 2. Choose the [type of the agent instance](supported-platforms-and-environments.md#JetBrains-Hosted+Agents) and the number of instances to add.
 3. Apply the changes.
 
+Note that the agent is prepaid until the end of the current calendar month. The price is scaled depending on the number of days left in this month.
+
 >You can distinguish a prepaid agent in the system by the word `Monthly` in its name.
 
 Prepaid agents can be used together with regular JetBrains-hosted agents. If a new build can be assigned to either a regular or prepaid agent, TeamCity will always assign it to the prepaid one.
