@@ -33,8 +33,6 @@ The dates of all previous releases and the sequence of TeamCity versions are lis
 > 
 >The TeamCity Cloud infrastructure allows releasing new features more frequently: they are now rolled out to the Cloud instances bimonthly. On-Premises instances can be upgraded to a new major version twice a year, exactly as before.
 > 
->To let our On-Premises users try the new features before the official major release, we will also publish trial On-Premises distributions on each Cloud release. However, it is strongly recommended to install such distributions only on non-production servers, for testing purposes.
-> 
 {type="note"}
 
 The default stages of a TeamCity release:
@@ -59,8 +57,6 @@ __TeamCity Cloud Major Release__
 <td>
 
 This is the first official version where the new features are rolled out to. It is released approximately once in two months as `YYYY.MM`.
-
-On-Premises users can also download this version and install it on their trial servers. However, __this is not a production version for TeamCity On-Premises__.
 
 See [TeamCity Cloud licensing policy](https://www.jetbrains.com/help/teamcity/cloud/teamcity-cloud-subscription-and-licensing.html).
 
