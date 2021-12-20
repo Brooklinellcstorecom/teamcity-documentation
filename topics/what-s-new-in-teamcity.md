@@ -95,7 +95,7 @@ It is now possible to edit the scope of [agent pools](agent-pool.md) and quickly
 
 To edit an agent pool's scope, click **Assign agents** in its settings. In this dialog, you can choose what agents you want to assign to the pool:
 
-<img src="edit-agent-pool.png" alt="SAML settings in TeamCity" width="460"/>
+<img src="edit-agent-pool.png" alt="Edit agent pool in new TeamCity UI" width="460"/>
 
 Note that whenever you select a cloud image, you actually assign all its instances to the pool. If this pool has a limit of agent slots, each cloud instance will take a single slot, just like any regular agent.
 
