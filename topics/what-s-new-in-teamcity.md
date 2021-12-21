@@ -70,7 +70,7 @@ To enable this functionality in TeamCity:
 1. In the project settings, configure a [connection to JetBrains Space](configuring-connections.md#connect-to-jetbrains-space) and create a Git [VCS root](configuring-vcs-roots.md) with your Space repository URL.
 2. In the build configuration settings, add the [Pull Requests](pull-requests.md) build feature with the _JetBrains Space_ VCS hosting type:  
    <img src="pull-requests-feature.png" alt="Pull Requests build feature" width="706"/>  
-  You can specify the [branch filter](branch-filter.md) to monitor merge requests only on target branches that match the specified criteria. For example, if you set the `+:feature-*` filter, TeamCity will monitor merge requests sent only to branches whose names start with `feature-`.
+  You can specify the [branch filter](branch-filter.md) to monitor merge requests only on target branches that match the specified criteria. For example, if you set the `+:refs/heads/feature-*` filter, TeamCity will monitor merge requests sent only to branches whose names start with `feature-`.
 3. To allow publishing build statuses in JetBrains Space, you also need to add the [Commit Status Publisher](commit-status-publisher.md) feature to this build configuration.
 
 After the integration is configured, TeamCity will detect merge requests submitted to the JetBrains Space target branches. For builds run on the requested changes, it will display the merge request details in the **Overview** tab:
@@ -113,11 +113,13 @@ Similarly, you can also associate projects with this pool: open the **Projects**
 - TeamCity stops supporting the [Microsoft Edge Legacy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-microsoft-edge-to-replace-microsoft-edge-legacy-with-april-s/ba-p/2114224) web browsers.
 - It is now impossible to automatically [trigger builds via REST API](https://www.jetbrains.com/help/teamcity/rest/start-and-cancel-builds.html#Advanced+Build+Run) when the [queue limit](https://www.jetbrains.com/help/teamcity/2021.12/ordering-build-queue.html#Limiting+Maximum+Size+of+Build+Queue) is reached on the server.
 - Updates in TeamCity Agent Docker images for Windows:
+{product="tcс"}
     - Bundled .NET Core SDK has been updated to 6.0.100.
+{product="tcс"}
     - Bundled two versions of .NET Core Runtime: 3.1.21 and 5.0.12.
 {product="tcс"}
 - Bundled IntelliJ IDEA has been updated to version 2021.2.3. Note that this version requires Java 11.
-- [SBT](http://www.scala-sbt.org/), used in the [Simple Build Tool (Scala)](https://www.jetbrains.com/help/teamcity/2021.12/simple-build-tool-scala.html) plugin, has been updated to version 1.5.5.
+- The [SBT](http://www.scala-sbt.org/) launcher, used in the [Simple Build Tool (Scala)](https://www.jetbrains.com/help/teamcity/2021.12/simple-build-tool-scala.html) plugin, has been updated to version 1.5.5.
 - The [Octopus Deploy integration plugin](https://plugins.jetbrains.com/plugin/9038-octopus-deploy-integration) bundled with TeamCity Cloud has been updated to version 6.1.8.
 {product="tcc"}
 - The [Unity Support plugin](https://plugins.jetbrains.com/plugin/11453-unity-support) bundled with TeamCity Cloud has been updated to version SNAPSHOT-20211116104228.
