@@ -103,9 +103,10 @@ Similarly, you can also associate projects with this pool: open the **Projects**
 
 ## Other updates
 
-- **Change the project scope of an investigation or mute**  
+**Change the project scope of an investigation or mute**  
   If a build problem occurs in multiple subprojects of the same project, it is convenient to assign its investigation (or mute it) within the whole parent project. However, users often forget to change the project scope in the _Investigation/Mute_ dialog, and TeamCity applies the action only within the current subproject. Now, project administrators can set a parent project as a preferred scope for all its subprojects. [Read how](investigating-and-muting-build-failures.md#Changing+Project+Scope+of+Investigation+or+Mute).
-- **Build failure conditions: Create a build problem per each matching error**  
+
+**Build failure conditions: Create a build problem per each matching error**  
   When configuring a _Fail build on specific text in build log_ [failure condition](build-failure-conditions.md), you can now specify whether to create a build problem only for the first text occurrence found in a build log (default) or for each error that matches the specified pattern.
 
 ## Upgrade Notes 2021.12
