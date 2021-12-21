@@ -115,10 +115,13 @@ Similarly, you can also associate projects with this pool: open the **Projects**
 - Updates in TeamCity Agent Docker images for Windows:
     - Bundled .NET Core SDK has been updated to 6.0.100.
     - Bundled two versions of .NET Core Runtime: 3.1.21 and 5.0.12.
+{product="tcс"}
 - Bundled IntelliJ IDEA has been updated to version 2021.2.3. Note that this version requires Java 11.
 - [SBT](http://www.scala-sbt.org/), used in the [Simple Build Tool (Scala)](https://www.jetbrains.com/help/teamcity/2021.12/simple-build-tool-scala.html) plugin, has been updated to version 1.5.5.
 - The [Octopus Deploy integration plugin](https://plugins.jetbrains.com/plugin/9038-octopus-deploy-integration) bundled with TeamCity Cloud has been updated to version 6.1.8.
+{product="tcc"}
 - The [Unity Support plugin](https://plugins.jetbrains.com/plugin/11453-unity-support) bundled with TeamCity Cloud has been updated to version SNAPSHOT-20211116104228.
+{product="tcc"}
 
 ## Previous releases
 
