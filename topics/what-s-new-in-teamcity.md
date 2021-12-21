@@ -4,8 +4,8 @@
 ## Running builds in your own Cloud infrastructure
 {product="tcc"}
 
-TeamCity Cloud can run builds _in a customer's local environment_ or in a _JetBrains-managed cloud_. Usually, the first approach works best for companies who want to have full control over their building processes, while the second one suits teams whose processes rely on IaaS. Since this update, we want to introduce the third approach that stays somewhere in between: **_running builds in a customer's cloud_**.  
-If you have a cloud infrastructure in Amazon EC2, Kubernetes, or VMware vSphere/vCenter, you can now integrate your TeamCity Cloud instance with it. This opens all the capabilities of cloud solutions (like custom launch policies and spot fleets) and gives you more control over the building environment than using JetBrains-hosted agents. In terms of subscription, such agents are considered [self-hosted](teamcity-cloud-subscription-and-licensing.md#cloud-self-hosted-agents), which means you purchase monthly slots for concurrent builds — there is no limit to their duration.  
+TeamCity Cloud can run builds _in a customer's local environment_ or in a _JetBrains-managed cloud_. Usually, the first approach works best for companies who want to have full control over their build processes, while the second one suits teams whose processes rely on IaaS. Since this update, we want to introduce the third approach that stays somewhere in between: **_running builds in a customer's cloud_**.  
+If you have a cloud infrastructure in Amazon EC2, Kubernetes, or VMware vSphere/vCenter, you can now integrate your TeamCity Cloud instance with it. This opens all the capabilities of cloud solutions (like custom launch policies and spot fleets) and gives you more control over the build environment than using JetBrains-hosted agents. In terms of subscription, such agents are considered [self-hosted](teamcity-cloud-subscription-and-licensing.md#cloud-self-hosted-agents), which means you purchase monthly slots for concurrent builds — there is no limit to their duration.  
 All three approaches can be combined for higher flexibility and fault-tolerance of your pipelines.
 
 Users familiar with TeamCity On-Premises might already know that TeamCity integrates with Cloud providers with the help of _cloud profiles_. And now, their functionality becomes available in TeamCity Cloud.
@@ -24,7 +24,9 @@ After the cloud profile is configured, TeamCity will be able to launch agents in
 ## Prepaid JetBrains-hosted build agents
 {product="tcc"}
 
-Another improvement related to build agents is an alternative pricing model: now, JetBrains-hosted agents can be prepaid for the following month. This option is the most convenient if you run a lot of builds on agents of certain types (6 or more hours a workday). As JetBrains-hosted agents are charged per build time, some customers could greatly benefit from paying a fixed amount of credits monthly, without caring about the builds' duration.
+Another improvement related to build agents is an alternative pricing model: now, JetBrains-hosted agents can be prepaid on a monthly basis. This option is the most convenient if you run a lot of builds on agents of certain types (6 or more hours a workday). As JetBrains-hosted agents are charged per build time, some customers could greatly benefit from paying a fixed amount of credits monthly, without caring about the builds' duration.
+
+Note that while the builds' duration is not limited, their concurrent number is. For example, if you prepay for 2 Linux Small cloud agents, only a maximum of 2 of those types of agents can be running concurrently with the prepaid rate. Any further concurrent builds on the same type will revert to the per-minute pricing.
 
 To prepay JetBrains-hosted agents, go to **Administration | Subscription &amp; Resources** , click **Buy agents** under the _Per-Month Agents_ section, and choose an [instance type](supported-platforms-and-environments.md#JetBrains-Hosted+Agents) you want to acquire. You can also define how many instances of this type can be run in parallel.
 
@@ -32,12 +34,14 @@ To prepay JetBrains-hosted agents, go to **Administration | Subscription &amp; R
 
 There is no need to wait until the end of the next month: whenever you prepay agents, the amount of charged build credits will depend on the number of days left till the end of the current month.
 
+If you plan to reduce the number of prepaid agents in the next month, you can adjust this number straight away. The setting will only be applied since the next month, and you won't have to worry about forgetting to change it at the end of the current one.
+
 ## Single sign-on authentication via SAML 2.0
 {product="tcc"}
 
-TeamCity Cloud now supports a new authentication method: Single Sign-On (SSO) via [SAML 2.0](https://en.wikipedia.org/wiki/SAML_2.0). Enabling it in your instance will allow users to authenticate in TeamCity with their account stored in one of the major identity providers: [Okta](https://www.okta.com/), [OneLogin](https://www.onelogin.com/), [AWS SSO](https://aws.amazon.com/single-sign-on/), and so on.
+TeamCity Cloud now supports a new authentication method: Single Sign-On (SSO) via [SAML 2.0](https://en.wikipedia.org/wiki/SAML_2.0). Enabling it in your instance will allow users to authenticate in TeamCity with their account stored in one of the major identity providers: [Okta](https://www.okta.com/), [OneLogin](https://www.onelogin.com/), [AWS SSO](https://aws.amazon.com/single-sign-on/), [AD FS](https://docs.microsoft.com/en-us/windows-server/identity/active-directory-federation-services), and so on.
 
-With a multitude of services an average software developer uses in their daily work, having one account for authentication in all of them can significantly offload the clutter. What's more importantly, using SSO identity managers is a good security practice, and TeamCity wants to encourage it by providing easy integration.
+With a multitude of services an average software developer uses in their daily work, having one account for authentication in all of them can significantly offload the clutter. More importantly, using SSO identity managers is a good security practice, and TeamCity wants to encourage it by providing easy integration.
 
 >The SAML 2.0 support is implemented as a plugin written by a third-party developer and verified by the TeamCity team as safe to use. It was previously available for download and successfully used by some of our customers, but now it's available out of the box.
 > 
@@ -50,7 +54,7 @@ You can enable SSO in TeamCity as any other authentication module: in **Administ
 <img src="enable-saml.png" alt="Enabling SAML in TeamCity" width="460"/>
 
 After that, the new **SAML Settings** page will appear in the **Administration** section. Use it to customize the module's behavior and to establish the integration on the TeamCity side. On the provider's side, you will need to create a dedicated app for a service connection to TeamCity. Its settings may vary depending on the provider, but the key steps are the same:
-1. Enter the TeamCity single sign-on URL, copied from **SAML Settings** page, in the app's settings.
+1. Enter the TeamCity single sign-on URL, copied from the **SAML Settings** page, in the app's settings.
 2. Copy the values of the app's SSO URL, issuer URL, and certificate.
 3. Enter them in the **SAML Settings** in TeamCity.
 

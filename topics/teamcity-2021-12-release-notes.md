@@ -2,7 +2,7 @@
 [//]: # (auxiliary-id: TeamCity 2021.12 Release Notes)
 
 __Build: 107109__  
-__21 December 2021__
+__22 December 2021__
 
 ### Feature
 
