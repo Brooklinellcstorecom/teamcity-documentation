@@ -68,22 +68,22 @@ TeamCity integration with JetBrains Space now includes the [Pull Requests](pull-
 
 To enable this functionality in TeamCity:
 1. In the project settings, configure a [connection to JetBrains Space](configuring-connections.md#connect-to-jetbrains-space) and create a Git [VCS root](configuring-vcs-roots.md) with your Space repository URL.
-2. In the build configuration settings, add the [Pull Requests](pull-requests.md) build feature with the _JetBrains Space_ VCS hosting type:
-  SCREENSHOT
+2. In the build configuration settings, add the [Pull Requests](pull-requests.md) build feature with the _JetBrains Space_ VCS hosting type:  
+   <img src="pull-requests-feature.png" alt="Pull Requests build feature" width="706"/>  
   You can specify the [branch filter](branch-filter.md) to monitor merge requests only on target branches that match the specified criteria. For example, if you set the `+:feature-*` filter, TeamCity will monitor merge requests sent only to branches whose names start with `feature-`.
 3. To allow publishing build statuses in JetBrains Space, you also need to add the [Commit Status Publisher](commit-status-publisher.md) feature to this build configuration.
 
-4. After the integration is configured, TeamCity will detect merge requests submitted to the JetBrains Space target branches. For builds run on the requested changes, it will display the merge request details in the **Overview** tab:
+After the integration is configured, TeamCity will detect merge requests submitted to the JetBrains Space target branches. For builds run on the requested changes, it will display the merge request details in the **Overview** tab:
 
-SCREENSHOT
+<img src="pull-request-details.png" alt="Build Overview - Pull Request Details" width="706"/>
 
 If the [Commit Status Publisher](commit-status-publisher.md) feature is enabled in the build configuration, TeamCity will also send statuses per build change to timelines of merge requests in JetBrains Space:
 
-SCREENSHOT
+<img src="space-timeline.png" alt="JetBrains Space - Merge Request Timeline" width="706"/>
 
 To protect a target branch and ensure that only verified requests are merged into it, you can set up [Quality Gates](https://www.jetbrains.com/help/space/branch-and-merge-restrictions.html#quality-gates-for-merge-requests) for your Space repository and use a TeamCity build as an external check. If a build on a merge request fails, Space will notify you that the changes have not passed the required quality check.
 
-SCREENSHOT
+<img src="space-quality-gates.png" alt="JetBrains Space - Quality Gates" width="706"/>
 
 ## New UI: Editing scope of agent pools
 
