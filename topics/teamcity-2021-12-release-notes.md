@@ -90,7 +90,6 @@ __22 December 2021__
 [**TW-73580**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-73580) — Maximum call stack size exceeded after enabling &quot;Group by project&quot; option on the build chain view in the new UI  
 [**TW-74060**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-74060) — Checkout rules mapping is not applied to paths in uploaded unified diff patch  
 [**TW-72434**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-72434) — Some unified diff patches with multiple chunks per single file cannot be applied during the personal build  
-[**TW-59663**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-59663) — &#39;Latest check for changes: 19:15 (unknown or unset)&#39; when changes are collected on secondary node  
 [**TW-73535**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-73535) — Error &quot;Could not obtain the list of repositories&quot; during creation a project using JetBrains Space connection  
 [**TW-72604**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-72604) — Build Progress messages are displayed inconsistently in Build Status  
 [**TW-72962**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-72962) — Deadlock found when trying to get lock (FailedTestsStorageImpl.markTestFailed)  
@@ -138,7 +137,6 @@ __22 December 2021__
 [**TW-73218**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-73218) — Missing DSL for Script Argument parameter in PowerShell runner  
 [**TW-73213**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-73213) — Missing DSL for some parameters in Docker runner  
 [**TW-73215**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-73215) — Missing DSL for Distinguish fields parameter in Duplicates finder (Java) runner  
-[**TW-73802**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-73802) — Secondary node should be able to load a build configuration, VCS root or project by external id alias  
 [**TW-73814**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-73814) — Adding a Ruby Env Configurator in DSL creates an arbitrary agent requirement for &quot;env.AAAA&quot;  
 [**TW-73789**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-73789) — Wrong link to pull request in Pull Request Details block for Bitbucket repos without projects  
 [**TW-73745**](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FTW-73745) — Builds with .NET SDK version \&lt; 6.0 failed with &quot;error MSB1008: Only one project can be specified.&quot; (on agents installed on paths with spaces)  
