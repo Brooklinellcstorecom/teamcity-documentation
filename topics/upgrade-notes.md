@@ -3,7 +3,6 @@
 
 ## Changes from 2021.2 to 2021.12
 
-* To comply with the test identifier format used by Microsoft, TeamCity now uses a different format of names for .NET assemblies (omitting a file extension). After updating to 2021.12, this format will be applied within all the tests launched via the `test` or `vstest` command of the [.NET](net.md) runner, but the investigations and history of these tests will be reset.
 * TeamCity stops supporting the [Microsoft Edge Legacy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-microsoft-edge-to-replace-microsoft-edge-legacy-with-april-s/ba-p/2114224) web browsers.
 * It is now impossible to automatically [trigger builds via REST API](https://www.jetbrains.com/help/teamcity/rest/start-and-cancel-builds.html#Advanced+Build+Run) when the [queue limit](ordering-build-queue.md#Limiting+Maximum+Size+of+Build+Queue) is reached on the server.
 
@@ -22,9 +21,9 @@
 
 ## Changes from 2021.2 to 2021.2.1
 
-* __.NET build runner counts parametrized tests as a single test__  
-  If parametrized .NET tests are launched with the `test` command of the [.NET](net.md) runner, TeamCity will show them as a single test with multiple runs, while previously it counted them separately and displayed the parameters' values per test in the __Tests__ tab.  
-  To revert to the previous behavior, please download the [fixed version of our .NET plugin](https://youtrack.jetbrains.com/issue/TW-74176#focus=Comments-27-5585620.0-0) and install it as described [here](installing-additional-plugins.md). This issue will be fixed in TeamCity 2021.2.2.
+* To comply with the common identifier format of .NET tests, TeamCity now uses a different format of names for .NET assemblies (omitting a file extension). After updating to 2021.2.1, this format will be applied within all the tests launched via the `test` or `vstest` command of the [.NET](net.md) runner, but the investigations and history of these tests might be reset.
+* If parametrized .NET tests are launched with the `test` command of the [.NET](net.md) runner, TeamCity will show them as a single test with multiple runs, while previously it counted them separately and displayed the parameters' values per test in the __Tests__ tab.  
+  To revert to the previous behavior, please download the [fixed version of our .NET plugin](https://youtrack.jetbrains.com/issue/TW-74176#focus=Comments-27-5585620.0-0) and install it as described [here](installing-additional-plugins.md).
 
 ### Bundled tools updates
 {id="bundled-tools-updates-202121"}
