@@ -136,7 +136,7 @@ You can even decrease the additional resources right after you've increased them
 
 SCREENSHOT
 
-## Choozing right size of subscription
+## Choosing right size of subscription
 
 When you acquire a new TeamCity Cloud subscription, or when it's time to renew, it is a good idea to closely review how many resources (build credits) are allocated to your TeamCity Cloud instance based on the number of committers in your subscription. This helps check whether you have an excessive amount of resources.
 
