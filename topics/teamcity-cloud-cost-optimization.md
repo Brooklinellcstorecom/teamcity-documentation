@@ -43,7 +43,7 @@ To ensure your builds are running on suitably sized hardware, you can add the [P
 
 This allows detecting potential bottlenecks by analyzing build results. An example of this is shown below, where the build agent's memory peaks at 95% midway through the build. This could indicate a larger build agent may be required.
 
-SCREENSHOT
+<img src="performance-monitor.png" width="750" alt="Performance monitor"/>
 
 To use a build agent of a more powerful specification, you can define [Agent Requirements](agent-requirements.md) for the build configuration.  
 For example, to define a minimum amount of memory (RAM), set the `teamcity.agent.hardware.memorySizeMb` [parameter](configuring-build-parameters.md). Builds under this build configuration will only run on a build agent that has a minimum of 30 GB RAM: 
@@ -63,6 +63,8 @@ The [Performance Monitor](#Use+Performance+Monitor+to+show+statistics+and+spot+b
 The __[Matrix](viewing-agents-workload.md#Load+Statistics+Matrix)__ is a tab available from the __Agents__ screen. It offers an overview of all projects and build configurations and shows totals of their overall build time across all build agents during a specific timeframe.
 
 If you have many projects or build configurations, the Matrix view provides a simple way to spot the most build-intensive projects. This can help you decide which types of build agents are best to run your builds.
+
+<img src="agent-matrix.png" width="750" alt="Agents matrix"/>
 
 ## Define quiet period for VCS Triggers
 
@@ -134,10 +136,12 @@ __Note__: if you don't decrease these additional resources prior to the end of t
 
 You can even decrease the additional resources right after you've increased them (in case you forget to do it later), and these resources will only stay active through the remainder of the current month.
 
-SCREENSHOT
-
 ## Choosing right size of subscription
 
 When you acquire a new TeamCity Cloud subscription, or when it's time to renew, it is a good idea to closely review how many resources (build credits) are allocated to your TeamCity Cloud instance based on the number of committers in your subscription. This helps check whether you have an excessive amount of resources.
 
 If you have an insufficient number of resources in your subscription, you may need to purchase additional build credits to top-up your account. This is more cost-effective than artificially increasing the committers on your subscription just to gain extra build credits, as you are paying for the committer slot, data storage, and data transfer when adding committers to your subscription. Unlike the build credits included in your subscription which reset at the end of each month, additionally purchased build credits rollover month-to-month if not fully used.
+
+## Contact Us
+
+If you have any questions regarding the points raised in this article, or if you would like some assistance to review the structure of your TeamCity Cloud subscription, please reach out to our [TeamCity Sales Engineering team](https://www.jetbrains.com/teamcity/get-in-touch/) who will be happy to advise you.
