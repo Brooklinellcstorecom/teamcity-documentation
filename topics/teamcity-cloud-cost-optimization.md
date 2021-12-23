@@ -64,7 +64,7 @@ The __[Matrix](viewing-agents-workload.md#Load+Statistics+Matrix)__ is a tab ava
 
 If you have many projects or build configurations, the Matrix view provides a simple way to spot the most build-intensive projects. This can help you decide which types of build agents are best to run your builds.
 
-<img src="agent-matrix.png" width="750" alt="Agents matrix"/>
+<img src="agent-matrix-no-outline.png" width="750" alt="Agents matrix"/>
 
 ## Define quiet period for VCS Triggers
 
