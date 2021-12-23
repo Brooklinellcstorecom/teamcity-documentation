@@ -33,7 +33,7 @@ Active Committers are distinguished by the VCS usernames, so if an individual us
 
 You can make TeamCity aware of the extra VCS usernames by populating the [additional VCS usernames on the user&#39;s profile page](configuring-your-user-profile.md#Managing+Version+Control+Username+Settings). TeamCity Cloud allows you to define up to 3 different VCS usernames for each TeamCity user.
 
-SCREENSHOT
+<img src="additional-vcs-usernames.png" alt="Add Requirement dialog" width="460"/>
 
 By having each TeamCity user populate all their VCS usernames, this not only ensures you use the minimum number of committer slots, but it also enables users to correctly track their changes in the [Changes](viewing-your-changes.md) screen and see all of their personal builds on the Projects page.
 
@@ -45,9 +45,10 @@ This allows you to spot potential bottlenecks by analysing the results after a b
 
 SCREENSHOT
 
-If you do need to use a build agent of a higher specification, you can define specific requirements on the [Agent Requirements](agent-requirements.md) screen under the build configuration. For example, you could define a minimum amount of memory (RAM) by using the parameter `teamcity.agent.hardware.memorySizeMb`. Builds under this build configuration will only run on a build agent that has a minimum of 30GB RAM: 
+If you do need to use a build agent of a higher specification, you can define specific requirements on the [Agent Requirements](agent-requirements.md) screen under the build configuration. For example, you could define a minimum amount of memory (RAM) by using the parameter `teamcity.agent.hardware.memorySizeMb`.   
+Builds under this build configuration will only run on a build agent that has a minimum of 30GB RAM: 
 
-SCREENSHOT
+<img src="add-requirement-dialog.png" alt="Add Requirement dialog" width="460"/>
 
 ### Check build agent size suitability
 
@@ -63,8 +64,6 @@ The [Matrix](viewing-agents-workload.md#Load+Statistics+Matrix) in TeamCity is a
 
 If you have many projects or build configurations, the Matrix view provides a simple way to spot the most build-intensive projects. This can help you decide which types of build agents are best to run your builds, or to perhaps consider enabling _Quiet Period_ settings on builds that run often to help limit the amount of overall build time they consume.
 
-SCREENSHOT
-
 ### Define Quiet Period settings on VCS Triggers
 
 If multiple commits are made to a repository in a short period of time, this can sometimes lead to separate builds being run - one build for each of those commits. Over time this can add up to an excessive consumption of build credits, when many of these commits could be combined together under a single build.
@@ -73,7 +72,7 @@ TeamCity makes this simple to accomplish by specifying [Quiet Period](configurin
 
 In this example, a quiet period of 300 seconds (5 minutes) has been defined on the VCS Trigger: 
 
-SCREENSHOT
+<img src="vcs-trigger-quiet-period.png" alt="Define Quiet Period on VCS Trigger" width="706"/>
 
 One important note regarding the use of Quiet Period settings - if you have also selected the option to trigger a build on each check-in, then the quiet period settings will be ignored.
 
@@ -93,7 +92,7 @@ If you know your build normally takes 3 minutes to run, you may want to configur
 
 By restricting the number of minutes a build can run, you can prevent hung builds from excessively consuming your build credits.
 
-SCREENSHOT
+<img src="failure-condition-time-limit.png" alt="Failure conditions - set time limits" width="706"/>
 
 ### Use self-hosted build agents for some of your builds
 
